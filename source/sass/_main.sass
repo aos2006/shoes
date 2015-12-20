@@ -1,0 +1,935 @@
+// Normally mainpage styles
+
+//global styles for container
+body
+	font-family: $font-family
+
+	//js-classes styles
+.js-arrow-rotate-up
+	transform: rotate(180deg)
+
+
+
+.container
+	width: 960px
+	margin: auto
+	padding: 0 10px
+
+//page-header
+
+.page-header
+	width: 100%
+	height: 45px
+	background-color: #242424
+	+clr
+	&__register
+		display: inline-block
+		float: right
+		font-size: 11px
+		font-weight: 400
+		line-height: 45px
+		color: #7e7e7e
+	&__go-account
+		color: #7e7e7e
+		font-size: 11px
+		font-weight: 400
+		line-height: 25px
+		text-transform: uppercase
+//end page-header
+
+//logo
+.logo
+	display: inline-block
+	vertical-align: middle
+	&__link
+		color: #57c5a0
+		font-size: 26px
+		font-weight: 500
+		line-height: 25px
+		text-transform: uppercase
+
+//end logo
+
+//products styles
+//global-sort-of
+.all-item
+	margin-bottom: 30px
+
+	&__shop-item
+		margin-bottom: 20px
+
+.global-sort-of
+	height: 90px
+	background-color: #2e2e2e
+	font-size: 0
+
+	&__dropdown
+		color: #fff
+		font-size: 18px
+		font-weight: 400
+		line-height: 60px
+		text-align: center
+		background-color: #242424
+		border-bottom: 1px solid white
+		&:last-child
+			border-bottom: none
+	&__drop-wrapper
+		display: none
+		position: absolute
+		left: 0
+		top: 100%
+		z-index: 100
+		width: 100%
+
+
+	&__label
+		display: inline-block
+		vertical-align: middle
+		margin-right: 88px
+		font-size: 22px
+		font-weight: 400
+		line-height: 90px
+		color: #fff
+
+	&__item
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+		width: 220px
+		height: 60px
+		text-align: center
+		background-color: #242424
+		cursor: pointer
+
+	&__item:last-child
+		margin-right: 0
+
+
+	&__value
+		display: inline-block
+		vertical-align: middle
+		color: #fff
+		font-size: 18px
+		font-weight: 400
+		line-height: 60px
+
+	&__icon-dropdown
+		position: absolute
+		right: 22px
+		top: 50%
+		margin-top: -7px
+		display: inline-block
+		vertical-align: middle
+		background: url(../img/sprites.png) 0px -187px
+		width: 14px
+		height: 14px
+		cursor: pointer
+
+//end global-sort-of
+
+.all-items__items-header
+	position: relative
+	margin-right: 19px
+
+.breadcrumbs
+	margin-top: 12px
+	display: inline-block
+	vertical-align: middle
+
+	&__item
+		display: inline-block
+		color: #bcb5a7
+		font-size: 12px
+		font-weight: 700
+		line-height: 1
+
+		&::after
+			display: inline-block
+			vertical-align: middle
+			content: '>'
+			margin: 0 5px
+
+	&__item:last-child
+
+		&::after
+			content: ""
+			margin: 0
+
+//product-controls
+.product-controls
+	position: absolute
+	right: 0
+	top: 50%
+	margin-top: -15px
+	font-size: 0
+	&__drop-wrapper
+		display: none
+		position: absolute
+		top: 100%
+		left: -1px
+		z-index: 100
+		width: 101%
+		border: 1px solid #bcb5a7
+	&__dropdown
+		width: 100%
+		font-size: 14px
+		font-weight: 700
+		line-height: 30px
+		text-align: center
+		color: #bcb5a7
+		border-bottom: 1px solid #898170
+		background-color: #ebe7df
+		&:last-child
+			border-bottom: none
+
+	&__label
+		display: inline-block
+		vertical-align: middle
+		margin-right: 22px
+		color: #bcb5a7
+		font-size: 14px
+		font-weight: 700
+
+	&__display
+		display: inline-block
+		vertical-align: middle
+		margin-right: 9px
+		width: 30px
+		height: 30px
+		background-color: #ebe7df
+		border: 1px solid #898170
+		background-repeat: no-repeat
+		background-position: 50% 50%
+
+
+	&__display--column
+		background-image: url(../img/icon-column-display.png)
+		background-size: 15px 15px
+
+	&__display--line
+		background-image: url(../img/icon-line-display.png)
+		background-size: 16px 12px
+
+	&__display:last-child
+		margin-right: 20px
+
+	&__sort-of
+		position: relative
+		display: inline-block
+		vertical-align: middle
+		text-align: right
+		width: 200px
+		height: 30px
+		background-color: #ebe7df
+		border: 1px solid #bcb5a7
+		cursor: pointer
+
+	&__item
+		display: inline-block
+		vertical-align: middle
+		margin-right: 9px
+		font-size: 14px
+		font-weight: 700
+		line-height: 30px
+		color: #bcb5a7
+
+
+	&__icon-dropdown
+		display: inline-block
+		vertical-align: middle
+		margin-right: 13px
+		background-image: url(../img/sprites.png)
+		background-position: 0px -158px
+		width: 14px
+		height: 14px
+		cursor: pointer
+
+
+//end product-controls
+//end products styles
+//navigation
+.navigation
+	background-color: #fff
+	font-size: 0
+	+clr
+	&__list
+		display: inline-block
+		min-height: 60px
+		font-size: 0
+	&__item
+		display: inline-block
+		vertical-align: middle
+		padding: 0 23px
+		font:
+			size: 16px
+			weight: 400
+		line-height: 60px
+		color: #242424
+		border-left: 1px solid #eee
+		&:last-child
+			border-right: 1px solid #eee
+	&__link
+		&:hover,
+		&:active
+			color: #57c5a0
+
+//end navigation
+//items-panel
+.items-panel
+	display: inline-block
+	float: right
+	width: 90px
+	height: 60px
+	text-align: center
+	border-right: 1px solid #ccc
+	&::before
+		display: inline-block
+		vertical-align: middle
+		content: ''
+		height: 100%
+	&--bor-left
+		border-left: 1px solid #ccc
+	&__icon
+		display: inline-block
+		vertical-align: middle
+		margin-right: 8px
+		width: 16px
+		height: 16px
+		cursor: pointer
+	&__icon--bgimg-star
+		background-image: url(../img/sprites.png)
+		background-position: 0px -305px
+	&__icon--bgimg-basket
+		background-image: url(../img/sprites.png)
+		background-position: 0px -130px
+
+
+
+	&__number
+		display: inline-block
+		vertical-align: middle
+		width: 20px
+		height: 20px
+		font:
+			size: 12px
+			weight: 700
+		line-height: 20px
+		text-align: center
+		border-radius: 4px
+		color: #fff
+		cursor: pointer
+	&__number--change-bg-gray
+		background-color: #adadad
+	&__number--change-bg-green
+		background-color: #57c5a0
+//end items-panel
+//banner
+.banner
+	position: relative
+	height: 460px
+	background-color: #efedea
+	background-image: url(../img/banner-img.jpg)
+	background-size: 778px 460px
+	background-repeat: no-repeat
+	background-position: left center
+	&__inner-wrapper
+		position: absolute
+		right: 108px
+		top: 50%
+		width: 384px
+		transform: translateY(-50%)
+	&__price
+		width: 68px
+		height: 67px
+		margin-bottom: 17px
+		color: #fff
+		font:
+			size: 13px
+			weight: 700
+		line-height: 67px
+		text-align: center
+		background-color: #57c5a0
+	&__title
+		margin-bottom: 13px
+		font:
+			size: 40px
+			weight: 300
+		line-height: 40px
+		color: #242424
+	&__descr-txt
+		margin-bottom: 15px
+		font:
+			size: 20px
+			weight: 300
+		line-height: 25px
+		color: #242424
+	&__controls
+		font-size: 0
+	&__btn
+		margin-right: 2px
+		width: 40px
+		height: 40px
+		background-color: rgba(255, 255, 255, 0.8)
+		background-position: 50% 50%
+		background-repeat: no-repeat
+	&__btn:last-child
+		margin-right: 0
+
+	&__btn--bgimg-eye
+		background-image: url(../img/eye-icon.png)
+		background-size: 16px 10px
+
+	&__btn--bgimg-star
+		background-image: url(../img/star-icon.png)
+		background-size: 16px 16px
+
+	&__btn--bgimg-share
+		background-image: url(../img/share-icon.png)
+		background-size: 16px 16px
+
+	&__btn--bgimg-basket
+		background-image: url(../img/cart--green-icon.png)
+		background-size: 16px 16px
+//end banner
+
+//category-list
+.category-list
+	padding-top: 6px
+	background-color: #2e2e2e
+	&__list
+		height: 90px
+		font-size: 0
+	&__item
+		position: relative
+		display: inline-block
+		width: 188px
+		vertical-align: middle
+		text-align: center
+		opacity: .5
+		cursor: pointer
+
+	&__item--active
+		opacity: 1
+	&__item--active::before
+		position: absolute
+		top: -21px
+		left: 0
+		display: block
+		content: ''
+		width: 186px
+		height: 6px
+		background-color: #57c5a0
+
+	&__name
+		display: block
+		font:
+			size: 18px
+			weight: 400
+		line-height: 25px
+		color: #fff
+
+	&__descr-txt
+		display: block
+		font:
+			size: 12px
+			weight: 400
+		line-height: 25px
+		color: #adadad
+//end category-list
+//top-line-decor
+.top-line-decor
+	margin-bottom: 13px
+	background-color: #000
+	font-size: 0
+
+	&__list
+		height: 10px
+		text-align: center
+		&::before
+			display: inline-block
+			vertical-align: middle
+			content: ''
+			height: 100%
+
+	&__item
+		display: inline-block
+		vertical-align: middle
+		height: 8px
+		width: 188px
+		background-color: transparent
+		border-right: 2px solid #2e2e2e
+	&__item:last-child
+		border-right: 0
+	&__item--active
+		background-color: #57c5a0
+//end-top-line-decor
+
+//info-about
+.info-about
+	font-size: 0
+	height: 230px
+	padding: 25px 0
+	background-color: #242424
+	&__item
+		display: inline-block
+		vertical-align: middle
+		margin-right: 20px
+		width: 300px
+		height: 180px
+		text-align: center
+		background-image: url(../img/sale-img.jpg)
+		background-size: cover
+		background-position: 50% 50%
+		&::before
+			display: inline-block
+			vertical-align: middle
+			content: ''
+			height: 100%
+	&__item:last-child
+		margin-right: 0
+
+	&__descr-txt
+		display: inline-block
+		vertical-align: middle
+		height: 60px
+		padding: 0 25px
+		font:
+			size: 25px
+			weight: 300
+		line-height: 60px
+		text-align: center
+		text-transform: uppercase
+		background-color: rgba(36, 36, 36, 0.9)
+		color: #fff
+
+//end info-about
+
+//main-content
+.main-content
+	background-color: #ebe7df
+
+.items-header
+	display: inline-block
+	vertical-align: middle
+	font-size: 25px
+	line-height: 1
+	padding: 34px 0
+	font-weight: 300
+	color: #242424
+
+.new-items,
+.all-item
+	font-size: 0
+
+	&__header
+		position: relative
+		+clr
+
+
+.items-btn-show
+	position: absolute
+	top: 50%
+	right: 0
+	margin-top: -15px
+	height: 30px
+	padding: 0 19px
+	font-size: 14px
+	font-weight: 700
+	line-height: 25px
+	color: #bcb5a7
+	background-color: #ebe7df
+	border: 1px solid #bcb5a7
+//end main-content
+//shop-item
+.shop-item
+	position: relative
+	display: inline-block
+	vertical-align: top
+	margin-right: 20px
+	width: 300px
+	min-height: 220px
+	background-color: #fff
+
+	&--marginr-0
+		margin-right: 0
+
+	&__descr-label
+		position: absolute
+		top: 0
+		right: 21px
+		width: 68px
+		height: 67px
+		background-color: #242424
+		color: #fff
+		font-size: 13px
+		font-weight: 700
+		text-align: center
+		text-transform: uppercase
+
+		&::before
+			display: inline-block
+			content: ''
+			vertical-align: middle
+			height: 100%
+
+		span
+			display: inline-block
+			vertical-align: middle
+
+	&__descr-label--bg-orange
+		background-color: #f27e4b
+
+	&__item-img
+		display: block
+		margin: 0 auto
+
+	&__footer
+		position: relative
+		height: 49px
+		background-color: white
+		box-shadow: inset 0 1px 0 #ccc
+
+
+	&__price
+		position: absolute
+		left: 12px
+		bottom: 0
+		width: 68px
+		height: 67px
+		font-size: 13px
+		font-weight: 700
+		line-height: 67px
+		text-align: center
+		background-color: #57c5a0
+		color: #fff
+	&__item-name
+		display: inline-block
+		margin-left: 93px
+		font-size: 18px
+		font-weight: 400
+		line-height: 49px
+		color: #242424
+
+.shop-item:last-child
+	margin-right: 0
+
+//end shop-item
+
+//items-options-panel
+.items-option-panel
+	display: none
+	position: absolute
+	top: 50%
+	margin-top: -20px
+	left: 93px
+
+	&__btn
+		@extend .banner__btn
+	&__btn--bgimg-eye
+		@extend .banner__btn--bgimg-eye
+
+	&__btn--bgimg-star
+		@extend .banner__btn--bgimg-star
+
+
+	&__btn--bgimg-share
+		@extend .banner__btn--bgimg-share
+
+
+	&__btn--bgimg-basket
+		@extend .banner__btn--bgimg-basket
+
+
+//end items-options-panel
+
+
+//best-items
+.best-items
+	@extend .new-items
+	margin-bottom: 47px
+
+	&__header
+		@extend .new-items__header
+
+//end best-items
+
+//reviews
+.reviews
+	display: inline-block
+	vertical-align: top
+	margin-right: 20px
+	padding: 32px 27px 0 15px
+	width: 220px
+	min-height: 185px
+	background-color: rgba(0, 0, 0, 0.05)
+
+	&__title
+		margin-bottom: 15px
+		font-size: 14px
+		font-weight: 700
+		line-height: 1
+		text-transform: uppercase
+		color: #242424
+
+	&__txt
+		color: #242424
+		font-size: 12px
+		font-weight: 400
+		line-height: 16px
+
+	&__name
+		@extend .reviews__txt
+		font-style: italic
+//end reviews
+.news
+	display: inline-block
+	vertical-align: top
+	padding: 32px 27px 0 15px
+	width: 460px
+	min-height: 185px
+	background-color: rgba(0, 0, 0, 0.05)
+	font-size: 0
+
+	&__inner-wrapper
+		display: inline-block
+		vertical-align: middle
+		width: 354px
+		height: 30px
+
+	&__title-post
+		color: #242424
+		line-height: 16px
+		font-size: 14px
+		font-weight: 700
+
+	&__txt-post
+		color: #242424
+		font-size: 12px
+		font-weight: 400
+		+text-overflow
+
+	&__row
+		margin-bottom: 16px
+
+	&__date
+		display: inline-block
+		vertical-align: middle
+		width: 36px
+		height: 36px
+		margin-right: 18px
+		font-weight: 700
+		line-height: 12px
+		font-size: 10px
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+		background-color: #57c5a0
+
+		&::before
+			display: inline-block
+			content: ''
+			vertical-align: middle
+			height: 100%
+
+		span
+			display: inline-block
+			vertical-align: middle
+
+	&__title
+		@extend .reviews__title
+//news
+
+//end news
+.main-content__info-blocks
+	padding: 26px 0
+	border-top: 1px solid #bcb5a7
+	font-size: 0
+
+//page-footer
+.page-footer
+	background-color: #242424
+	padding-top: 51px
+	font-size: 0
+
+	&__bottom-line
+		height: 90px
+		background-color: #2e2e2e
+		+clr
+
+	&__middle-line
+		text-align: left
+		height: 118px
+		border-top: 1px solid #1c1c1c
+		+clr
+
+	&__input-group
+		display: inline-block
+		vertical-align: middle
+
+	.input-group
+		width: 250px
+		height: 36px
+		background-color: #2e2e2e
+
+		&__field
+			display: inline-block
+			vertical-align: middle
+			padding-left: 14px
+			height: 100%
+			width: 250px - 36px
+			font-size: 12px
+			font-style: italic
+			color: #7d7d7d
+			background-color: inherit
+
+
+		&__go
+			display: inline-block
+			vertical-align: middle
+			width: 36px
+			height: 100%
+			background-color: #7d7d7d
+			background-image: url(../img/arrow-icon.png)
+			background-size: 7px 12px
+			background-position: 50% 50%
+			background-repeat: no-repeat
+
+//widget
+.widget
+	display: inline-block
+	text-align: left
+	vertical-align: top
+	margin-right: 40px
+	width: 260px
+
+	&__title
+		margin-bottom: 19px
+		color: #7d7d7d
+		font-size: 14px
+		font-weight: 400
+		line-height: 18px
+
+	&__txt
+		color: #a4a4a4
+		font-size: 12px
+		font-style: italic
+		line-height: 18px
+
+.widget:last-child
+	margin-right: 0
+
+
+.widget-tw
+
+
+	&__row
+		margin-bottom: 15px
+
+	&__txt
+		margin-bottom: 11px
+		font-size: 12px
+		font-style: italic
+		line-height: 18px
+		color: #a4a4a4
+
+	&__link
+		color: #57c5a0
+
+	&__date
+		color: #c4c5bf
+		font-size: 12px
+		font-style: italic
+		line-height: 18px
+//end widget
+//end page-footer
+.container--before
+	height: inherit
+
+.container--before::before
+	display: inline-block
+	vertical-align: middle
+	content: ""
+	height: 100%
+
+.container--smaller-width
+	width: 860px
+	padding: 0
+
+	//social-list
+.social-list
+	float: right
+	font-size: 0
+	margin-top: 41px
+
+	&__item
+		display: inline-block
+		margin-right: 8px
+		width: 36px
+		height: 36px
+		background-color: #2e2e2e
+
+	&__item:last-child
+		margin-right: 0
+
+	&__link
+		display: inline-block
+		vertical-align: top
+		width: 100%
+		height: 100%
+		background-position: 50% 50%
+		background-repeat: no-repeat
+
+	&__link--fb
+		background-image: url(../img/facebook.png)
+
+	&__link--tw
+		background-image: url(../img/twitter.png)
+
+	&__link--g
+		background-image: url(../img/google.png)
+
+	&__link--in
+		background-image: url(../img/leakedin.png)
+
+	&__link--flick
+		background-image: url(../img/flickr.png)
+	//end social-list
+	//copyright
+.copyright
+	display: inline-block
+	vertical-align: middle
+	color: #fff
+	font-size: 12px
+	font-weight: 400
+	line-height: 18px
+	opacity: .5
+	//end copyright
+
+	//footer-nav
+.footer-nav
+	display: inline-block
+	float: right
+	+clr
+	font-size: 0
+
+	&__item
+		display: inline-block
+		color: #fff
+		font-size: 12px
+		font-weight: 400
+		line-height: 90px
+		opacity: .5
+
+		&::after
+			display: inline-block
+			vertical-align: middle
+			content: '/'
+			margin: 0 5px
+
+	&__item:last-child
+		&::after
+			content: ''
+			margin: 0
+
+	//end footer-nav
